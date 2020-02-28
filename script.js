@@ -48,15 +48,13 @@ function darkToggle() {
 }
 
 $(document).ready(function() {
-  if (location.href.includes("index")) {
-    $(".photo-carousel").slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: "linear"
-    });
-  }
+  $(".photo-carousel").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear"
+  });
 });
 
 const sendFeedback = () => {
