@@ -47,8 +47,8 @@ function darkToggle() {
   element.classList.toggle("dark-mode");
 }
 
-if (location.href.includes("index")) {
-  $(document).ready(function() {
+$(document).ready(function() {
+  if (location.href.includes("index")) {
     $(".photo-carousel").slick({
       dots: true,
       infinite: true,
@@ -56,8 +56,8 @@ if (location.href.includes("index")) {
       fade: true,
       cssEase: "linear"
     });
-  });
-}
+  }
+});
 
 const sendFeedback = () => {
   alert("Thanks for the feedback!");
