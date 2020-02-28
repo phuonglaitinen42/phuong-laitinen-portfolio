@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phuong Laitinen</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2be82ea0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="contact">
+    <header>
+      <h1><a href="index.html">Phuong Laitinen</a></h1>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="mobile-menu" id="mobile-nav">
+          <a href="index.html">Bio</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <button
+        onclick="darkToggle()"
+        id="dark-toggle"
+        class="dark-mode"
+        title="Dark Mode"
+      >
+        <i class="far fa-lightbulb fa-3x"></i>
+      </button>
+      <a href="CV.pdf" title="Print CV"><i class="fas fa-print fa-2x"></i></a>
+      <span style="color: white;" onclick="openNav()"
+        ><i class="fas fa-bars fa-2x"></i
+      ></span>
+    </header>
+    <main>
+      <section id="contact-info">
+        <div class="contact-wrap">
+          <h2>Get In Touch</h2>
+          <h3>Email Address</h3>
+          <p>
+            <a href="mailto:ngo.phuong4296@gmail.com"
+              >ngo.phuong4296@gmail.com</a
+            >
+          </p>
+          <h3>Phone Number</h3>
+          <p>(+358) 466 1755 56</p>
+          <h3>Github</h3>
+          <p>
+            <a href="https://github.com/heihazy">https://github.com/heihazy</a>
+          </p>
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/phuong-laitinen-6b8098126/"
+              >https://www.linkedin.com/in/phuong-laitinen-6b8098126/</a
+            >
+          </p>
+        </div>
+        <div class="form-wrap">
+          <h2>Or you can send me some feedback about this website</h2>
+          <form>
+            <div class="form-group">
+              <h3>Design</h3>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                id="slider"
+                class="slider"
+              />
+              <p id="value" class="value">50</p>
+            </div>
+            <div class="form-group">
+              <h3>User interaction</h3>
+              <input type="range" min="1" max="100" value="50" class="slider" />
+              <p class="value">50</p>
+            </div>
+            <div class="form-group">
+              <h3>Website's structure</h3>
+              <input type="range" min="1" max="100" value="50" class="slider" />
+              <p class="value">50</p>
+            </div>
+            <div class="form-group">
+              <h3>Overall score</h3>
+              <input type="range" min="1" max="100" value="50" class="slider" />
+              <p class="value">50</p>
+            </div>
+            <div class="form-group">
+              <h3>Other Comments</h3>
+              <textarea
+                type="text"
+                name="comment"
+                id="comment"
+                placeholder="Enter your comment here"
+              ></textarea>
+            </div>
+            <button type="submit" onclick="sendFeedback()">Send</button>
+          </form>
+        </div>
+      </section>
+      <button onclick="topFunction()" id="back-to-top" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </main>
+    <footer>
+      <h3><i class="far fa-copyright"></i>Phuong Laitinen</h3>
+      <h3>All Rights Reserved</h3>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

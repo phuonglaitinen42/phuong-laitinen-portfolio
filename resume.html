@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phuong Laitinen</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2be82ea0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="resume">
+    <header>
+      <h1><a href="index.html">Phuong Laitinen</a></h1>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="mobile-menu" id="mobile-nav">
+          <a href="index.html">Bio</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <button onclick="darkToggle()" id="dark-toggle" class="dark-mode" title="Dark Mode">
+        <i class="far fa-lightbulb fa-3x"></i>
+      </button>
+      <a href="CV.pdf" title="Print CV"><i class="fas fa-print fa-2x"></i></a>
+      <span style="color: white;" onclick="openNav()"
+        ><i class="fas fa-bars fa-2x"></i
+      ></span>
+    </header>
+    <main>
+        <section class="exp-wrap">
+            <section id="exp">
+                <h2>Experience</h2>
+                <div class="work-exp">
+                    <h3>Marketing Project Leader, KOKORO Oy</h3>
+                    <p>Jun 2019-Oct 2019</p>
+                    <ul>
+                        <li>Created content on social media</li>
+                        <li>Researched and analyzed customers personas</li>
+                        <li>Managed internal marketing</li>
+                    </ul>
+                </div>
+                <div class="work-exp">
+                    <h3>HR Associate, Bookaholic.vn</h3>
+                    <p>Dec 2016-Aug 2018</p>
+                    <ul>
+                        <li>Created job advertisement</li>
+                        <li>Recruited and instructed new collaborators</li>
+                        <li>Administrated communication channels</li>
+                    </ul>
+                </div>
+                <div class="work-exp">
+                    <h3>English Translator, Bookaholic.vn</h3>
+                    <p>Jun 2016--Dec 2016</p>
+                    <ul>
+                        <li>Translated articles from English to Vietnamese</li>
+                        <li>Edited and posted articles on the website</li>
+                    </ul>
+                </div>
+                <div class="work-exp">
+                    <h3>Co-working Business Assistant Trainee, HUB13 Oy</h3>
+                    <p>Aug 2016-Oct 2016</p>
+                    <ul>
+                        <li>Operated working space in B2B environment</li>
+                        <li>Managed clients' and company's events</li>
+                        <li>Assisted customer nurturing process</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="edu">
+                <h2>Education</h2>
+                <div class="education">
+                    <h3>Helsinki Business College</h3>
+                    <p>2020-2021</p>
+                    <h4>Full Stack Developer Program</h4>
+                </div>
+                <div class="education">
+                  <h3>South-Eastern Finland University of Applied Sciences</h3>
+                  <p>2014-2018</p>
+                  <h4>Bachelor's Degree of Business Administration</h4>
+                  <h4>Major: International Business</h4>
+                </div>
+            </section>
+        </section>
+        <button onclick="topFunction()" id="back-to-top" title="Go to top">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+    </main>
+    <footer>
+        <h3><i class="far fa-copyright"></i>Phuong Laitinen</h3>
+        <h3>All Rights Reserved</h3>
+      </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

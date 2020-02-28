@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phuong Laitinen</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2be82ea0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="portfolio">
+    <header>
+      <h1><a href="index.html">Phuong Laitinen</a></h1>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="mobile-menu" id="mobile-nav">
+          <a href="index.html">Bio</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <button
+        onclick="darkToggle()"
+        id="dark-toggle"
+        class="dark-mode"
+        title="Dark Mode"
+      >
+        <i class="far fa-lightbulb fa-3x"></i>
+      </button>
+      <a href="CV.pdf" title="Print CV"><i class="fas fa-print fa-2x"></i></a>
+      <span style="color: white;" onclick="openNav()"
+        ><i class="fas fa-bars fa-2x"></i
+      ></span>
+    </header>
+    <main>
+      <div class="portfolio-wrap">
+        <section class="project">
+          <div class="project-title">
+            <a href="https://heihazy.github.io/cartoon-hero" target="_blank"
+              ><h3>Cartoon Hero</h3></a
+            >
+          </div>
+          <a href="https://heihazy.github.io/cartoon-hero" target="_blank"
+            ><img src="img/ppgirls-avatar.jpeg" alt="cartoon-hero"
+          /></a>
+        </section>
+        <section class="project">
+          <div class="project-title">
+            <a href="https://heihazy.github.io/heihazy-farm" target="_blank"
+              ><h3>HeiHazy Farm</h3></a
+            >
+          </div>
+          <a href="https://heihazy.github.io/heihazy-farm" target="_blank"
+            ><img src="img/Heihazy Farm.png" alt="heihazy-farm"
+          /></a>
+        </section>
+        <section class="project">
+          <div class="project-title">
+            <a
+              href="https://heihazy.github.io/portfolio-website"
+              target="_blank"
+              ><h3>First Portfolio</h3></a
+            >
+          </div>
+          <a href="https://heihazy.github.io/portfolio-website" target="_blank"
+            ><img src="img/photo-1.jpg" alt="first-photo"
+          /></a>
+        </section>
+      </div>
+      <button onclick="topFunction()" id="back-to-top" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </main>
+    <footer>
+      <h3><i class="far fa-copyright"></i>Phuong Laitinen</h3>
+      <h3>All Rights Reserved</h3>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

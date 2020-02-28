@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phuong Laitinen</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2be82ea0a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" class="active">Phuong Laitinen</a></h1>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="mobile-menu" id="mobile-nav">
+          <a href="index.html">Bio</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <button
+        onclick="darkToggle()"
+        id="dark-toggle"
+        class="dark-mode"
+        title="Dark Mode"
+      >
+        <i class="far fa-lightbulb fa-3x"></i>
+      </button>
+      <a href="CV.pdf" title="Print CV"><i class="fas fa-print fa-2x"></i></a>
+      <span style="color: white;" onclick="openNav()"
+        ><i class="fas fa-bars fa-2x"></i
+      ></span>
+    </header>
+    <main>
+      <section id="home-about" class="index-page">
+        <div id="hero-banner"></div>
+        <div id="scroll-down-btn">
+          <a href="#" class="scroll-down" address="true"></a>
+        </div>
+      </section>
+      <section id="intro">
+        <div class="photo-carousel">
+          <div><img src="img/bio-photo.jpg" alt="profile-photo" /></div>
+          <div><img src="img/photo-4.jpg" alt="internship-photo" /></div>
+          <div><img src="img/slush.jpg" alt="Slush 2018" /></div>
+        </div>
+        <div id="intro-content">
+          <h2>Hello</h2>
+          <p>
+            I'm Phuong, a Full Stack Development student at Helsinki Business
+            College. I also have business background as a result-driven
+            markerter.
+          </p>
+        </div>
+      </section>
+
+      <section id="home-skills" class="index-skill">
+        <h2>My Skills</h2>
+        <div id="cards">
+          <div class="skill-card">
+            <i class="fab fa-html5 fa-5x"></i>
+            <h3>HTML</h3>
+            <progress class="skill-name html" value="80" max="100"
+              >80%</progress
+            >
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt fa-5x"></i>
+            <h3>CSS</h3>
+            <progress class="skill-name css" value="60" max="100">60%</progress>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js fa-5x"></i>
+            <h3>JavaScript</h3>
+            <progress class="skill-name js" value="30" max="100">30%</progress>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-figma fa-5x"></i>
+            <h3>UI Design</h3>
+            <progress class="skill-name design" value="50" max="100"
+              >50%</progress
+            >
+          </div>
+        </div>
+      </section>
+      <button onclick="topFunction()" id="back-to-top" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </main>
+    <footer>
+      <h3><i class="far fa-copyright"></i>Phuong Laitinen</h3>
+      <h3>All Rights Reserved</h3>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
