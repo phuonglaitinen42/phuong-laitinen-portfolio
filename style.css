@@ -270,20 +270,28 @@ footer {
 }
 
 .portfolio-wrap {
-  display: flex;
+  display: grid;
+  grid-gap: 2rem;
+  padding-top: 5rem;
+  align-items: center;
+}
+
+/* .portfolio-wrap {
+  display: grid;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 100px;
+} */
+
+.project img {
+  border-radius: 10px;
+  width: 30%;
+  display: grid;
+  justify-content: center;
 }
 
-.portfolio-wrap img {
-  width: 300px;
-  height: 300px;
-  border-radius: 5%;
-}
-
-.project {
+/* .project {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -292,10 +300,18 @@ footer {
   padding: 20px;
   margin: 50px;
   align-items: center;
+} */
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 .project-title h3 {
   font-size: 20px;
+  display: grid;
+  justify-content: center;
 }
 
 .project a {
@@ -381,6 +397,11 @@ footer {
   color: #ffffff;
   text-transform: uppercase;
   margin-left: 30px;
+}
+
+.form-wrap button:hover {
+  cursor: pointer;
+  color: #f75239;
 }
 
 .slider {
