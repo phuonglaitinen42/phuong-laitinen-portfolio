@@ -1,6 +1,4 @@
-*,
-:after,
-:before {
+*, :after, :before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -75,8 +73,7 @@ header a {
   transition: 0.3s;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+.overlay a:hover, .overlay a:focus {
   color: #f75239;
   cursor: pointer;
 }
@@ -95,6 +92,7 @@ header a {
 #dark-toggle:hover {
   cursor: pointer;
 }
+
 .dark-mode {
   background-color: #494949;
   color: #ffffff;
@@ -104,9 +102,7 @@ header a {
   color: #ffffff;
 }
 
-.dark-mode header,
-.dark-mode footer,
-.dark-mode .overlay {
+.dark-mode header, .dark-mode footer, .dark-mode .overlay {
   background-color: #494949;
 }
 
@@ -167,11 +163,7 @@ header a {
 }
 
 @keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
+  0%, 100%, 20%, 50%, 80% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -253,22 +245,19 @@ progress {
   border: 0 none;
   background: rgb(105, 99, 99);
   border-radius: 14px;
-  box-shadow: inset 0px 1px 1px rgba(100, 96, 96, 0.5),
-    0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 1px 1px rgba(100, 96, 96, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
 progress::-moz-progress-bar {
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4),
-    0 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 progress[value]::-webkit-progress-value {
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4),
-    0 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -2px 4px rgba(182, 174, 174, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -393,6 +382,7 @@ footer {
   text-transform: uppercase;
   margin-left: 30px;
 }
+
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -441,8 +431,7 @@ footer {
   text-transform: uppercase;
 }
 
-#exp,
-#edu {
+#exp, #edu {
   margin: 20px 0;
 }
 
@@ -484,16 +473,15 @@ footer {
 #back-to-top:hover {
   background-color: #97a4e5;
 }
+
 @media screen and (max-width: 768px) {
   .overlay a {
     font-size: 20px;
   }
-
   .overlay .closebtn {
     top: 15px;
     right: 35px;
   }
-
   #intro {
     height: 100vh;
     padding-top: 50px;
@@ -506,32 +494,26 @@ footer {
     line-height: 1.5rem;
     font-size: 100%;
   }
-
   .project {
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 0;
   }
-
   .project-title h3 {
     text-transform: inherit;
     padding: 10px;
   }
-
   .project img {
     width: 200px;
     height: 200px;
   }
-
   .exp-wrap {
     flex-direction: column;
     margin: 0;
   }
-
   footer {
     width: 100%;
   }
-
   .contact-wrap {
     padding: 20px;
   }
